@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buys",
+  "info": {
+    "singularName": "buy",
+    "pluralName": "buys",
+    "displayName": "Buy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "number": {
+      "type": "biginteger"
+    },
+    "console": {
+      "type": "string"
+    }
+  }
+}
