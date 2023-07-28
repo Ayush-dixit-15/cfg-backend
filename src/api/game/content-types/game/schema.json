@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "singularName": "game",
+    "pluralName": "games",
+    "displayName": "Game"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gameName": {
+      "type": "string"
+    },
+    "consoleType": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "gameName"
+    },
+    "details": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "Poster": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "genre": {
+      "type": "string"
+    },
+    "Banner": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

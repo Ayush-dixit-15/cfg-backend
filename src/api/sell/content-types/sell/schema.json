@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sells",
+  "info": {
+    "singularName": "sell",
+    "pluralName": "sells",
+    "displayName": "Sell"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "number": {
+      "type": "biginteger"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "email"
+    },
+    "model": {
+      "type": "string"
+    }
+  }
+}

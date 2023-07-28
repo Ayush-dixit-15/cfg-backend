@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "combos",
+  "collectionName": "consoles",
   "info": {
-    "singularName": "combo",
-    "pluralName": "combos",
-    "displayName": "Combo",
-    "description": ""
+    "singularName": "console",
+    "pluralName": "consoles",
+    "displayName": "Console"
   },
   "options": {
     "draftAndPublish": true
@@ -15,63 +14,52 @@
     "title": {
       "type": "string"
     },
+    "description": {
+      "type": "text"
+    },
+    "mainImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "extraImage1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "extraImage2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "extraImage3": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
     "slug": {
       "type": "uid",
       "targetField": "title"
     },
-    "mainImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "details": {
-      "type": "text"
-    },
-    "consolePrice1": {
+    "plan1": {
       "type": "decimal"
     },
-    "extraImage1": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "plan2": {
+      "type": "decimal"
     },
-    "extraImage2": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "plan3": {
+      "type": "decimal"
     },
-    "extraImage3": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "extraImage4": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "extraImage5": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "plan4": {
+      "type": "decimal"
     },
     "whatsInTheBoxText1": {
       "type": "string"
@@ -86,12 +74,6 @@
       "type": "string"
     },
     "whatsInTheBoxText5": {
-      "type": "string"
-    },
-    "whatsInTheBoxText6": {
-      "type": "string"
-    },
-    "whatsInTheBoxText7": {
       "type": "string"
     },
     "whatsInTheBoxImage1": {
@@ -128,29 +110,6 @@
       ],
       "type": "media",
       "multiple": false
-    },
-    "whatsInTheBoxImage6": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "whatsInTheBoxImage7": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "consolePrice2": {
-      "type": "decimal"
-    },
-    "consolePrice3": {
-      "type": "decimal"
-    },
-    "consolePrice4": {
-      "type": "decimal"
     }
   }
 }

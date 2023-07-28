@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kycs",
+  "info": {
+    "singularName": "kyc",
+    "pluralName": "kycs",
+    "displayName": "KYC"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "house_no": {
+      "type": "string"
+    },
+    "area_street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "pincode": {
+      "type": "biginteger"
+    },
+    "landmark": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "kyc"
+    },
+    "selfie": {
+      "type": "text"
+    },
+    "address_proof": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "identity_proof_front": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "identity_proof_back": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "signature": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
